@@ -21,3 +21,8 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - largest subarray with sum 0 using map and concept of repeating sum
 - largest consecutive sequence in array using Sorting and Map approach.
 - learnt xor technique to find count(sub-arrays) with given xor.
+
+
+## Day 5
+- Approaches : slow-fast pointer approach to find middle, delete last nth node
+- Algorithm : recursive merge sort to merge to sorted linkedlist.
