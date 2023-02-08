@@ -28,14 +28,15 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - Algorithm : recursive merge sort to merge to sorted linkedlist.
 
 ## Day 6
-- Approaches: tracking cycle,find node cycled using slow/fast pointer.
-              flattening the linkedlist using merge sort and recursion.
-              intersection of two LL using equi distancing.
-              checking palindrome using vector, manipulating LL.
-              reversing nodes in k groups using proper pointer linking.
+### Approaches: 
+- tracking cycle,find node cycled using slow/fast pointer.
+- flattening the linkedlist using merge sort and recursion.
+- intersection of two LL using equi distancing.
+- checking palindrome using vector, manipulating LL.
+- reversing nodes in k groups using proper pointer linking.
 
 ## Day 7
-- Approaches: copy LL with random pointer [map + LL manip approach].
--             rotate LL simply by pointer manip and k%len logic.
-              use pointers to find max consecutive ones and removing duplicates.
-              Trapping rain water by keeping track of tallest walls around and selecting min among them.           
+### Approaches: copy LL with random pointer [map + LL manip approach].
+- rotate LL simply by pointer manip and k%len logic.
+- use pointers to find max consecutive ones and removing duplicates.
+- trapping rain water by keeping track of tallest walls around and selecting min among them.           
