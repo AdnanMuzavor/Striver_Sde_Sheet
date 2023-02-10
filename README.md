@@ -50,3 +50,16 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 ### Approaches:
 - Basically recursive technique to find combination sum,subset sum etc
 - Technique to avoid repeatition of same set in result set by sorting + skipping prev same element
+
+## Day 10
+### Approaches
+- Reaching home from given points where in rather then trying all paths from start
+  since given end points, we can simply approach to those end points from start and find the cost.
+- Coloring graph by ietrating via nodes and backtracking when current combo fails or succeeds.
+- Trying queen combos on board and backtracking as and when necessary.
+- Rat in maze uses power of backtracking and visisted matrix. Hoever edge cases considering 
+  blocks at start and destination matters and skipping long soln procedure.
+- Sudoku solver which tries each combo of chars to find appropriate fit,
+  trick/formula to check 3*3 sub-matrix in 9*9 big matrix. ** if (board[3 * (r / 3) + (i / 3)][3 * (c / 3) + (i % 3)] == ch) ** 
+  where ch is character currently we are trying to place.
+
