@@ -39,4 +39,9 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 ### Approaches: copy LL with random pointer [map + LL manip approach].
 - rotate LL simply by pointer manip and k%len logic.
 - use pointers to find max consecutive ones and removing duplicates.
-- trapping rain water by keeping track of tallest walls around and selecting min among them.           
+- trapping rain water by keeping track of tallest walls around and selecting min among them.   
+
+## Day 8
+### Approaches: 
+- Greedy approach by sorting to maximise/minimise th result
+- Using greedy technique to find tracks needed, maximum meeting feeting in room etc
