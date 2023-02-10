@@ -45,3 +45,8 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 ### Approaches: 
 - Greedy approach by sorting to maximise/minimise th result
 - Using greedy technique to find tracks needed, maximum meeting feeting in room etc
+
+## Day 9
+### Approaches:
+- Basically recursive technique to find combination sum,subset sum etc
+- Technique to avoid repeatition of same set in result set by sorting + skipping prev same element
