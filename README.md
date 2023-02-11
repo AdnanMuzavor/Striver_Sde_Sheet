@@ -63,3 +63,14 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
   trick/formula to check 3*3 sub-matrix in 9*9 big matrix. ** if (board[3 * (r / 3) + (i / 3)][3 * (c / 3) + (i % 3)] == ch) ** 
   where ch is character currently we are trying to place.
 
+## Day 11
+### Algorithm/technique: Binary Search
+- To find first position we binary serahc in left most side and vice versa at every iteration.
+- To find kth elements we basically use two pointer approach and counter to stop when we reach kth element
+- Median of two arrays is found by using same above approach yet can be optimised.
+- Search in rotated sorted array rolls round concept of Binary Search however its very important to check/compare
+  element at low and high with mid so that we can decide where our target element will fit accordingly we move pointers.
+  However in PART II we learn to decrease number of iterations simply by comparing element at low and high with mid and if same
+  we decrease them equally to reduce window size
+- Single elemnt in sorted array can be found by **XORING** But binary search approach can be used which has to be traced and 
+  learnt for understanding.
