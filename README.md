@@ -89,13 +89,13 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - When we use heap say of size k we reduce complexity from NlogN to NlogK
 ### Implementation?
 - It's preferable to use STLs a
-- **MAX HEAP** : priority_queue<int> max_heap;
-- **MIN HEAP** : priority_queue<int,vector<int>,greater<int>> min_heap
+- **MAX HEAP** : priority_queue<<int>> max_heap;
+- **MIN HEAP** : priority_queue<int,vector<<int>>,greater<<int>>> min_heap
 - **If Multiple values** :
     - It's better to use typedef and define your values
     - example heap having pair<int,pair<int,int>>
     - typedef pair<int,pair<int,int>>  ppi
-    - priority_queue<ppi,vector<ppi>,greater<ppi>> min_heap
+    - priority_queue<ppi,vector<<ppi>>,greater<<ppi>>> min_heap
 
 
 ## Day 17
