@@ -74,3 +74,18 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
   we decrease them equally to reduce window size
 - Single elemnt in sorted array can be found by **XORING** But binary search approach can be used which has to be traced and 
   learnt for understanding.
+
+## Day 17
+### Approach name: Vertical Traversal
+- Vertical traversal is tarversal of binary tree interms of vertical lines from left to right.
+- ***Applications***: Top and Bottom view of a binary tree.
+### Approach name: Level Traversal
+- Level order traversal of binary tree is it's traversal from top to bottom.
+- ***Applications***: - left and right view of a binary tree.
+                      - level order + indexing to find maximum width.
+                      - Indexing is further expanded to avoid OVERFLOW issue which might occur in left/right only
+                        Binary trees, in this appraoch w emake sure that each level indexes start from 1 till n
+                        this is acjieved by subtracting from minimum.
+-Using recursion to find path to given node, approach used is: **Preorder**
+
+
