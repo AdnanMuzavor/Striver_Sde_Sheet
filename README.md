@@ -112,6 +112,15 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
   this is acjieved by subtracting from minimum.
 - Using recursion to find path to given node, approach used is: **Preorder**
 
+## Day 18
+### Approach name: BT traversals for various applications
+- BT traversals include various traversals such as inorder, preorder, postorder etc.
+- ***Applications***: BTs identical, Flatten BT, LCA of BT, Mirror tree, symmetric tree, tree construction.
+### Approach name: Height of BT
+- Level order traversal of binary tree is it's traversal from top to bottom.
+- ***Applications***: Height of tree, diameter of tree, check if tree is balanced.
+
+
 
 
 
