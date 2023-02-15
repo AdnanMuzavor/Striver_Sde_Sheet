@@ -120,7 +120,7 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - Level order traversal of binary tree is it's traversal from top to bottom.
 - ***Applications***: Height of tree, diameter of tree, check if tree is balanced.
 
-## Day 2-
+## Day 20
 ### Approach name: Application of previous problems
 - Creating tree from only preorder/postorder where in we use low and high pointers
   and create tree using low for pre and using high for post.
@@ -133,7 +133,18 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - Validating binary serahc tree can be done simply by checking if  value of node lies in range formed from it's parent and initial
   values.       
 
-
+## Day 21
+- In ***BST iterator*** problem we reduce the space from o(n) TO O(1) using stack approach where every time
+ we push left nodes as we know that ininorder left most nodes matter and comes first.
+- In ***Finding duplicate subtrees*** we use the string approach to form a string corresponding to each of the subtree
+  and we map the count of strings, if a string is formed more the once means it's a duplicate subtree.
+- ***Floor and Ceil*** are simply the inorder prec and succ problem broken down into separate problems.  
+- ***Largest BST in BT*** demands creation of structure/class whose object helps us keep track of three main requisites
+  namely, maximum ,minimum value for validating BST abd maximum no of nodes.
+- ***Kth smallest and largest*** values in BST are found with help of counter and inorder traversal so it's this traversal only 
+  which gives us a sorted array.  
+- ***Existence of pair sum in BST*** is found by combo of three functions one iterating each node [Any of three traversals]
+  and othersearching for node with other value.***But*** Its better to get inorder array which is sorted and find in that array using binary search
 
 
 
