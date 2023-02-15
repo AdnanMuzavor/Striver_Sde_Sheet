@@ -120,6 +120,19 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - Level order traversal of binary tree is it's traversal from top to bottom.
 - ***Applications***: Height of tree, diameter of tree, check if tree is balanced.
 
+## Day 2-
+### Approach name: Application of previous problems
+- Creating tree from only preorder/postorder where in we use low and high pointers
+  and create tree using low for pre and using high for post.
+- ***Create ht balanced BST from sorted array*** seems tough but all you need is form tree using mid every time
+  i.e if array is of len=5 mid is i=2 so a[2] is root and left will be ***i=0..i=1*** and right will be ***i=2..i=3***
+- Populating right node is done using iterative appraoch where in every time we start from left most node
+  and go level by level
+- Predecessor and succecor can be found using inorder traversal and vector (brute force) otherwise a set of two
+  if else one for prec and one for succ in recurisve call of inorder optimizes the space.
+- Validating binary serahc tree can be done simply by checking if  value of node lies in range formed from it's parent and initial
+  values.       
+
 
 
 
