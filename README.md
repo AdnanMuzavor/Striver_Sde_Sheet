@@ -152,6 +152,9 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - ***Find Median Of Data Stream*** is a heap application where in contro of gtwo heaps help us to achieve the required median 
 - ***Kth largets element in stream*** is just the kth largest elemnt only presented in different way. 
 - ***Distinct numbers in window*** are found simply by using a map and sliding window i.e two pointer approach.
+### Algorithm: Flood Fill Algorithm
+- We start from one cell of the matrix and we traverse around by validating surrounding cells and using ***visisted***
+  matrix as and when necessary.
 
 
 
