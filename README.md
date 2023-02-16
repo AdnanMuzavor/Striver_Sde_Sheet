@@ -156,5 +156,11 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - We start from one cell of the matrix and we traverse around by validating surrounding cells and using ***visisted***
   matrix as and when necessary.
 
+## Day 23
+### Data Structure: Graph
+### Traversals
+***BFS***: Involves using a queue and visited vector to traverse the nodes breadth wise .
+***DFS***: Involves using a recusrion and visited vector to move to the depth from a given node.
+
 
 
