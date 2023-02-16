@@ -96,6 +96,8 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
     - example heap having pair<int,pair<int,int>>
     - typedef pair<int,pair<int,int>>  ppi
     - priority_queue<ppi,vector<<ppi>>,greater<<ppi>>> min_heap
+ ### Applicative Problems   
+- ***Find Median Of Data Stream*** is a heap application where in contro of gtwo heaps help us to achieve the required median      
 
 
 ## Day 17
@@ -145,6 +147,11 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
   which gives us a sorted array.  
 - ***Existence of pair sum in BST*** is found by combo of three functions one iterating each node [Any of three traversals]
   and othersearching for node with other value.***But*** Its better to get inorder array which is sorted and find in that array using binary search
+
+## Day 22
+- ***Find Median Of Data Stream*** is a heap application where in contro of gtwo heaps help us to achieve the required median 
+- ***Kth largets element in stream*** is just the kth largest elemnt only presented in different way. 
+- ***Distinct numbers in window*** are found simply by using a map and sliding window i.e two pointer approach.
 
 
 
