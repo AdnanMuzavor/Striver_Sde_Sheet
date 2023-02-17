@@ -158,16 +158,22 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 
 ## Day 23
 ### Data Structure: Graph
+
 ### Traversals
 ***BFS***: Involves using a queue and visited vector to traverse the nodes breadth wise .
 ***DFS***: Involves using a recusrion and visited vector to move to the depth from a given node.
+
 ### Checking for cycle
 ## Undirected graph
 ***BFS*** appraoch simply uses a queue and prev node to check for existence of cycle
 ***DFS*** approach simply uses recursiona and prev to check for existence of cycle
 ## Directed graph
-***BFS*** yet to be unfolded
+***BFS*** We use Kahns algorithm , the one used to find toposort, it's based on ceonept that
+          toposort is possible to find with all it's n nodes if and only if given directed graph is not cyclic
+          hence if cycle is found count **[count of nodes processed]** will be less then n **[no of nodes]**
+          indicating cycle existance.
 ***DFS*** approach simply uses recursion , a visisted and dfs visisted vector to help track cycle.
+
 ### Bipartite graph
 - A graph is said to be bipartite if and only if it's possible to color graph with exactlt two colors.
 ***DFS*** appraoch uses a color variable and color vector, it checks if current node which is adjacent to given node is 
@@ -177,7 +183,15 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 ***BFS*** appraoch uses a color variable and color vector, it checks if current node which is adjacent to given node is 
           colored, if yes it shouldnt be same color as that of given node, if yes it returns false as adjacent nodes
           have same colors otherwise if condition is valid or adj_node is uncolored, it goes ahead with coloring using
-          queue space.          
+          queue space.      
+
+### Topological sort
+- It's a sequence such that if there is edge between u and v then u comes first in sequence then v
+***DFS*** : Appraoch simply uses a stack where in we keep going into depth and we push elemnts into stack
+            as we backtrack thus if there is **edge from u to v** first **v** will be pushed into stack then
+            **u** hence while popping from stack u will be popped first then v forming sequnce **[ u , v ]**
+            satisfying above condition. 
+***Kahns Algorithm*** : is used to find toposort of given directed graph using BFS.                      
 
 
 
