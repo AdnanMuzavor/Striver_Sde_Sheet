@@ -161,6 +161,23 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 ### Traversals
 ***BFS***: Involves using a queue and visited vector to traverse the nodes breadth wise .
 ***DFS***: Involves using a recusrion and visited vector to move to the depth from a given node.
+### Checking for cycle
+## Undirected graph
+***BFS*** appraoch simply uses a queue and prev node to check for existence of cycle
+***DFS*** approach simply uses recursiona and prev to check for existence of cycle
+## Directed graph
+***BFS*** yet to be unfolded
+***DFS*** approach simply uses recursion , a visisted and dfs visisted vector to help track cycle.
+### Bipartite graph
+- A graph is said to be bipartite if and only if it's possible to color graph with exactlt two colors.
+***DFS*** appraoch uses a color variable and color vector, it checks if current node which is adjacent to given node is 
+          colored, if yes it shouldnt be same color as that of given node, if yes it returns false as adjacent nodes
+          have same colors otherwise if condition is valid or adj_node is uncolored, it goes ahead with coloring using
+          recursive stack space.
+***BFS*** appraoch uses a color variable and color vector, it checks if current node which is adjacent to given node is 
+          colored, if yes it shouldnt be same color as that of given node, if yes it returns false as adjacent nodes
+          have same colors otherwise if condition is valid or adj_node is uncolored, it goes ahead with coloring using
+          queue space.          
 
 
 
