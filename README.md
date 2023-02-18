@@ -191,7 +191,18 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
             as we backtrack thus if there is **edge from u to v** first **v** will be pushed into stack then
             **u** hence while popping from stack u will be popped first then v forming sequnce **[ u , v ]**
             satisfying above condition. 
-***Kahns Algorithm*** : is used to find toposort of given directed graph using BFS.                      
+***Kahns Algorithm*** : is used to find toposort of given directed graph using BFS.
+
+### Shortest distance from source
+***Using BFS***: In an given **undirected graph** we start from source and for source or current node's asjacent
+                 if we manage to find lesser diatance then we update distance for that adjacent node and pushes
+                 it into the queue so that next time it can be used.
+***Using Toposort***: In an given **directed graph** we use toposort order to pop elemnts from stack and find
+                      minimum distance from popped elements.
+***Djikstras Algorithm*** : Finds hortest distance of each node from source for both
+                            directed and undirected graphs.                                        
+
+
 
 
 
