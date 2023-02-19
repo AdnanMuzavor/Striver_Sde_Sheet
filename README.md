@@ -160,51 +160,51 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 ### Data Structure: Graph
 
 ### Traversals
-***BFS***: Involves using a queue and visited vector to traverse the nodes breadth wise .
-***DFS***: Involves using a recusrion and visited vector to move to the depth from a given node.
+- ***BFS***: Involves using a queue and visited vector to traverse the nodes breadth wise .
+- ***DFS***: Involves using a recusrion and visited vector to move to the depth from a given node.
 
 ### Checking for cycle
 ## Undirected graph
-***BFS*** appraoch simply uses a queue and prev node to check for existence of cycle
-***DFS*** approach simply uses recursiona and prev to check for existence of cycle
+- ***BFS*** appraoch simply uses a queue and prev node to check for existence of cycle
+- ***DFS*** approach simply uses recursiona and prev to check for existence of cycle
 ## Directed graph
-***BFS*** We use Kahns algorithm , the one used to find toposort, it's based on ceonept that
+- ***BFS*** We use Kahns algorithm , the one used to find toposort, it's based on ceonept that
           toposort is possible to find with all it's n nodes if and only if given directed graph is not cyclic
           hence if cycle is found count **[count of nodes processed]** will be less then n **[no of nodes]**
           indicating cycle existance.
-***DFS*** approach simply uses recursion , a visisted and dfs visisted vector to help track cycle.
+- ***DFS*** approach simply uses recursion , a visisted and dfs visisted vector to help track cycle.
 
 ### Bipartite graph
 - A graph is said to be bipartite if and only if it's possible to color graph with exactlt two colors.
-***DFS*** appraoch uses a color variable and color vector, it checks if current node which is adjacent to given node is 
+- ***DFS*** appraoch uses a color variable and color vector, it checks if current node which is adjacent to given node is 
           colored, if yes it shouldnt be same color as that of given node, if yes it returns false as adjacent nodes
           have same colors otherwise if condition is valid or adj_node is uncolored, it goes ahead with coloring using
           recursive stack space.
-***BFS*** appraoch uses a color variable and color vector, it checks if current node which is adjacent to given node is 
+- ***BFS*** appraoch uses a color variable and color vector, it checks if current node which is adjacent to given node is 
           colored, if yes it shouldnt be same color as that of given node, if yes it returns false as adjacent nodes
           have same colors otherwise if condition is valid or adj_node is uncolored, it goes ahead with coloring using
           queue space.      
 
 ### Topological sort
 - It's a sequence such that if there is edge between u and v then u comes first in sequence then v
-***DFS*** : Appraoch simply uses a stack where in we keep going into depth and we push elemnts into stack
+- ***DFS*** : Appraoch simply uses a stack where in we keep going into depth and we push elemnts into stack
             as we backtrack thus if there is **edge from u to v** first **v** will be pushed into stack then
             **u** hence while popping from stack u will be popped first then v forming sequnce **[ u , v ]**
             satisfying above condition. 
-***Kahns Algorithm*** : is used to find toposort of given directed graph using BFS.
+- ***Kahns Algorithm*** : is used to find toposort of given directed graph using BFS.
 
 ### Shortest distance from source
-***Using BFS***: In an given **undirected graph** we start from source and for source or current node's asjacent
+- ***Using BFS***: In an given **undirected graph** we start from source and for source or current node's asjacent
                  if we manage to find lesser diatance then we update distance for that adjacent node and pushes
                  it into the queue so that next time it can be used.
-***Using Toposort***: In an given **directed graph** we use toposort order to pop elemnts from stack and find
+- ***Using Toposort***: In an given **directed graph** we use toposort order to pop elemnts from stack and find
                       minimum distance from popped elements.
-***Djikstras Algorithm*** : Finds hortest distance of each node from source for both
+- ***Djikstras Algorithm*** : Finds hortest distance of each node from source for both
                             directed and undirected graphs.                                        
 
 ### Minimum Spanning Tree
 - A tree formed from graph having exactly n-1 edges [ where n is number of nodes ]
-***Prims Algorithm**: An algorithm starts from node and then for each selected node it updates the key
+- ***Prims Algorithm**: An algorithm starts from node and then for each selected node it updates the key
                       where key is edge weight of that node [minimum edge weight]. This process continues
                       until we find n-1 edges [each having minimal weights]
 
