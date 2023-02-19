@@ -202,6 +202,11 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 ***Djikstras Algorithm*** : Finds hortest distance of each node from source for both
                             directed and undirected graphs.                                        
 
+### Minimum Spanning Tree
+- A tree formed from graph having exactly n-1 edges [ where n is number of nodes ]
+***Prims Algorithm**: An algorithm starts from node and then for each selected node it updates the key
+                      where key is edge weight of that node [minimum edge weight]. This process continues
+                      until we find n-1 edges [each having minimal weights]
 
 
 
