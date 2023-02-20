@@ -43,7 +43,7 @@ void MinSpanTree(vector<pair<int, int>> adj[], int n, int src)
 
         // Part which noe takes LogN times
         int node = pq.top().second;
-        
+
         pq.pop();
         // Since I got nodea nd I am processing it
         // I'll make it's mst
@@ -58,8 +58,9 @@ void MinSpanTree(vector<pair<int, int>> adj[], int n, int src)
             // We update the keys value and corresponding parent
             if (mst[adjnode] == false && wt < keys[adjnode])
             {
-                pq.push({keys[adjnode], adjnode});
                 keys[adjnode] = wt;
+                pq.push({keys[adjnode], adjnode});
+
                 pr[adjnode] = node;
             }
         }

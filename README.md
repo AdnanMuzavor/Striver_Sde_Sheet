@@ -207,6 +207,8 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - ***Prims Algorithm**: An algorithm starts from node and then for each selected node it updates the key
                       where key is edge weight of that node [minimum edge weight]. This process continues
                       until we find n-1 edges [each having minimal weights]
+- ***Kruskals Algorithm***: An algorithm starts by sorting the edges based on edge weights and then we proces
+                            each of sorted edge weight and check if edges can be combined into MST or not and take decision accordingly., A concept pof disjoint set is also used in the process.                      
 
 
 
