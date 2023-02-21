@@ -200,7 +200,9 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - ***Using Toposort***: In an given **directed graph** we use toposort order to pop elemnts from stack and find
                       minimum distance from popped elements.
 - ***Djikstras Algorithm*** : Finds hortest distance of each node from source for both
-                            directed and undirected graphs.                                        
+                            directed and undirected graphs.        
+- ***BellmanFord Algorithm***: Find sthe shortest distance by doing n-1
+                              relaxations [ where n is no of nodes]. It can also be used to detect negative cycle as after shortest distances are found in n-1 ietrations if distance is still reducing that indicates a negative cycle.                                                            
 
 ### Minimum Spanning Tree
 - A tree formed from graph having exactly n-1 edges [ where n is number of nodes ]
