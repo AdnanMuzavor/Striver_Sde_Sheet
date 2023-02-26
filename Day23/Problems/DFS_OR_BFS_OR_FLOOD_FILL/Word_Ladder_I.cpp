@@ -62,10 +62,64 @@ Constraints:
 #include <bits/stdc++.h>
 using namespace std;
 
+// STRIVERS OPTIMISE DMETHOD OF USING SET
+class Solution
+{
+public:
+    int ladderLength(string startWord, string endWord, vector<string> &wordList)
+    {
+        // To help us know whether string exists in the list
+        unordered_set<string> st(wordList.begin(), wordList.end());
+        if (st.find(endWord) == st.end())
+            return 0;
 
+        // We shall start from startword
+        queue<pair<string, int>> q;
 
-//BRUTE FORCE => MY CODE
-// } Driver Code Ends
+        q.push({startWord, 1}); // Initally starting word and len = 1
+
+        while (!q.empty())
+        {
+            auto tp = q.front();
+            q.pop();
+            string str = tp.first;
+            string init_str = str;
+            int len = tp.second;
+            if (str == endWord)
+                return len; // We found the answer
+
+            // Try replacing each character with other 25 chars and if str
+            // formed exists then update the length and push new str into the queue
+            for (int i = 0; i < str.size(); i++)
+            {
+
+                // cout<<"_________changing: "<<i<<" th char_____________"<<endl;
+                str = init_str;
+                for (char c = 'a'; c <= 'z'; c++)
+                {
+
+                    str[i] = c;
+
+                    // Ele if str in dict, we shall find next version of str by including current
+                    // version henc elength too is increased
+                    if (st.find(str) != st.end())
+                    {
+
+                        // So as to avpod taking same str again, else itll go into looping
+                        st.erase(str);
+                        q.push({str, len + 1});
+                    }
+                }
+            }
+        }
+
+        // If all its / combos are tried and we reach here means no Combos
+        return 0;
+    }
+};
+
+// BRUTE FORCE => MY CODE
+
 class Solution
 {
 public:
