@@ -63,11 +63,7 @@ public:
                 }
             }
         }
-        //  for(int i=0;i<n;i++){
-        //         for(int j=0;j<n;j++){
-        //            cout<<
-        //         }
-        //     }
+
         int ans = 0, min_count = INT_MAX;
         for (int via = 0; via < n; via++)
         {
@@ -79,7 +75,6 @@ public:
                     c++;
                 }
             }
-            //  cout<<" could reach "<<c<<" cities from "<<via<<endl;
             if (c <= min_count)
             {
                 min_count = c;
