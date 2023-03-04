@@ -210,7 +210,8 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
                       where key is edge weight of that node [minimum edge weight]. This process continues
                       until we find n-1 edges [each having minimal weights]
 - ***Kruskals Algorithm***: An algorithm starts by sorting the edges based on edge weights and then we proces
-                            each of sorted edge weight and check if edges can be combined into MST or not and take decision accordingly., A concept pof disjoint set is also used in the process.                      
+                            each of sorted edge weight and check if edges can be combined into MST or not and take decision accordingly., A concept pof disjoint set is also used in the process.  
+- **Disjoint Set** :   Disjoint set is data structure which can help us to know whether the given two nodes belong to same component or not with help of methods like **GetParent** and **Union** . Further concept of **path compression** makes the GetParent function more **efficient**.                                                     
 
 
 
