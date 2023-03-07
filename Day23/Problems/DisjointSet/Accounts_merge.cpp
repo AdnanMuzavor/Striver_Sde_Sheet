@@ -161,3 +161,113 @@ public:
         return op;
     }
 };
+
+// Reformed code
+class Solution
+{
+public:
+    int giveP(vector<int> &parr, int node)
+    {
+        if (parr[node] == node)
+            return node;
+        else
+            return parr[node] = giveP(parr, parr[node]);
+    }
+    void union1(vector<int> &parr, vector<int> &rank, int u, int v)
+    {
+        int parr_u = giveP(parr, u);
+        int parr_v = giveP(parr, v);
+        if (parr_u == parr_v)
+        {
+            return;
+        }
+        if (rank[parr_u] > rank[parr_v])
+        {
+            parr[parr_v] = parr_u;
+        }
+        else if (rank[parr_v] > rank[parr_u])
+        {
+            parr[parr_u] = parr_v;
+        }
+        else
+        {
+            parr[parr_u] = parr_v;
+            rank[parr_v]++;
+        }
+    }
+    vector<vector<string>> accountsMerge(vector<vector<string>> &accounts)
+    {
+        // => Lets consider each vector as node and map the email to that node number
+        int node_no = 0;
+
+        int n = accounts.size(); // no of nodes
+
+        vector<int> rank(n, 0);
+        vector<int> parr(n, 0);
+
+        for (int i = 0; i < n; i++)
+        {
+            parr[i] = i;
+        }
+
+        unordered_map<string, int> mp;
+        vector<vector<string>> op;
+
+        for (auto entries : accounts)
+        {
+            for (int i = 1; i < entries.size(); i++)
+            {
+                // => If current email is not mapped , map it to node number
+                string email = entries[i];
+
+                if (!mp.count(email))
+                {
+
+                    mp[email] = node_no;
+                }
+                else
+                {
+
+                    // This means all mails in current entry should be added
+                    // to the node_no where mp[email] is MAPPED
+                    // We do this using disjoint set
+                    union1(parr, rank, node_no, mp[email]);
+                }
+            }
+            // Update node number to map next entries
+            node_no++;
+        }
+
+        vector<string> mergeMail[n];
+        for (auto it : mp)
+        {
+            string mail = it.first;                 // Get the mail
+            int main_node = giveP(parr, it.second); // Get the aprent node
+            // push the current mail to the parent node's vector
+            mergeMail[main_node].push_back(mail);
+        }
+
+        // Make the op vector
+        for (int i = 0; i < n; i++)
+        {
+            // If current node has no mails, that means it must be having a prent node
+            // to which all other nodes are attached
+            if (mergeMail[i].size() == 0)
+                continue;
+            // Otherise first make a temp vector to pbe pushed to op
+            vector<string> temp;
+            // push name
+            temp.push_back(accounts[i][0]);
+            // Sort the vector at mergeMail[i]
+            sort(mergeMail[i].begin(), mergeMail[i].end());
+            // push these sorted mails into the op temp
+            for (auto mail : mergeMail[i])
+            {
+                temp.push_back(mail);
+            }
+            // push the temp into ans
+            op.push_back(temp);
+        }
+        return op;
+    }
+};
