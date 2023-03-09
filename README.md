@@ -220,6 +220,10 @@ Striver SDE sheet is helpful sheet for approaching to a valid solution to a prob
 - 2) Reverse edges to avoid foing from First SCC to second and so on..
 - 3) Do DFS again, count of dfs will be the number of SCCs
 
+### Bridges in Graph
+-An special edge whose removal can split graph intro 2 separate components is called bridge
+- **Trajans Algorithm** : This algorithm is used to find bridges in graph, it uses concept of time and lowtime to take decision.
+
 
 
 
